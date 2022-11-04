@@ -1,4 +1,10 @@
 ul{
+  /* Het bovenste bepaalt welk teken er voor de opties van het menu staan, namelijk een circel.
+  Met Margin kun je ruimte tussen de elementen creëren, dit kun je gebruiken om bijvoorbeeld de positie 
+  van het menu bij te stellen.
+  Padding gebruik je samen met margin om de positie nog specefieker te maken.
+  
+  */
     list-style-type: circle;
     margin: 50;
     padding: 20;
