@@ -3,7 +3,8 @@ ul{
   Met Margin kun je ruimte tussen de elementen creëren, dit kun je gebruiken om bijvoorbeeld de positie 
   van het menu bij te stellen.
   Padding gebruik je samen met margin om de positie nog specefieker te maken.
-  
+  Overflow geeft aan of je wel of niet wilt dat je verder kan scrollen naar meer tekst.
+  Background-color is de kleur van de menu link blokken.  
   */
     list-style-type: circle;
     margin: 50;
@@ -12,10 +13,19 @@ ul{
     background-color: rgb(82, 241, 9);
   }
 
+  
+/* Dit geeft de positie van het menu aan. 
+  */
   li {
     float: center;
   }
   
+/* Display geeft de vorm van het menu aan. 
+   Text-allign geeft de positie van de tekst in het menu aan.
+   Text-decoration geeft lijn versiering in de menu tekst aan.
+  
+  */
+
   li a {
     display: block;
     color: rgb(1, 173, 15);
@@ -25,7 +35,7 @@ ul{
   }
   
 
-/* Change the link color to (green) on hover */
+/* Dit verandert de kleur van het menu als je muis er over heen gaat. */
 
 li a:hover {
     background-color: rgb(44, 133, 0);
