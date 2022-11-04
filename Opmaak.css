@@ -11,7 +11,7 @@ ul{
   }
   
   li a {
-    display: circle;
+    display: block;
     color: rgb(1, 173, 15);
     text-align: center;
     padding: 14px 16px;
