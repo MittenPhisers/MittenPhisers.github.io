@@ -17,7 +17,7 @@ ul{
 /* Dit geeft de positie van het menu aan. 
   */
   li {
-    float: left;
+    float: right;
   }
   
 /* Display geeft de vorm van het menu aan. 
