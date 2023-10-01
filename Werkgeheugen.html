@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html>
 
+<title>Werkgeheugen</title>
+<body>
+    
+<h1>Het Werkgeheugen</h1>
+
+<article>
+<h2>Inleiding</h2>
+<h4>De toepassingslaag is de toepassing van alle componenten in een apparaat. Van een smartphone zijn dit de apps, van een tv 
+  zijn dit de programmas die je kunt kijken, van een radio is dit de muziek die je kunt horen; alles wat een apparaat doet als functie,
+  is de toepassingslaag.
+</h4>
+</article>
+
+<article>
+  <h2>Toepassingsprogramma's</h2>
+  <p>Toepassingsprogramma's, ook wel bekend als softwaretoepassingen of gewoon 'apps', zijn computerprogramma's die zijn ontworpen om 
+    specifieke taken of functies uit te voeren voor gebruikers. Deze programma's worden gebruikt om verschillende soorten taken en 
+    activiteiten uit te voeren op computers, smartphones, tablets en andere apparaten. Als je een app download, download je dus eigenlijk
+    een script die uitgevoerd wordt door de processor. Deze scripten zijn specifiek ontworpen voor gebruikers.
+  </p>
+  </article>
+
+  <article>
+  <h2>API</h2>
+  <p>Een API, afgekort voor Application Programming Interface, is een set regels en protocollen waarmee verschillende software kan communiceren
+    en samenwerken met elkaar. Een API definieert de manier waarop verschillende stukken software met elkaar kunnen praten en gegevens kunnen
+    uitwisselen, zonder dat ontwikkelaars de interne werking van die software volledig hoeven te begrijpen. Zonder een API zou software zwaar
+    chaotisch zijn, doordat ontwikkelaars per toepassingsprogramma apart samenwerking moeten programmeren.
+  </p>
+    </article>
+
+    <article>
+      <h2>Hieronder zie je de werking van een API</h2>>
+      <img src="API.png" alt="3-Lagenmodel." Width="400" Height="200">
+      </article>
 
 
+</body>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+    </style>
+    </head>
+    <body style="background-color:white;">
+      
+      
 
-
-
-
-
-
-
-
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">MENU</button>
+      <div id="myDropdown" class="dropdown-content">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="FysiekeLaag.html">Fysieke Laag</a></li>
+    <li><a href="LogischeLaag.html">Logische Laag</a></li>
+    <li><a href="3-lagenmodel.html">3-Lagenmodel</a></li>
+      </div>
+    </div>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 
 </html>
